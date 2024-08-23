@@ -1,4 +1,37 @@
-//
+// Imports:
+@use "../../styles/partials/_mixins";
 
 .auto-carousel {
+	height: 20vh;
+	padding: 0 1.25rem;
+	margin: 0 auto;
+	color: #d9d9d9;
+
+	@mixin tablet {
+		padding: 0 3%;
+	}
+
+	@mixin desktop {
+		max-width: 75rem;
+	}
+
+	&__slide {
+		height: 25vh;
+		width: 50%;
+		padding: 1rem;
+		margin: 0 1rem;
+		background-image: linear-gradient(180deg, black 70%, white 100%);
+	}
+
+	&__title {
+		margin: 0;
+	}
+
+	&__image-container {
+		height: 70%;
+		width: 90%;
+		background-color: #d9d9d9;
+		border-radius: 0.25rem;
+		overflow: hidden;
+	}
 }

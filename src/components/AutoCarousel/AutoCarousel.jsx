@@ -1,17 +1,13 @@
 // Styling:
 import "./AutoCarousel.scss";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 // Imports:
 import React, { useRef } from "react";
 import Slider from "react-slick";
 
 export default function AutoCarousel() {
 	let sliderRef = useRef(null);
-	const play = () => {
-		sliderRef.slickPlay();
-	};
-	const pause = () => {
-		sliderRef.slickPause();
-	};
 
 	const settings = {
 		dots: true,
@@ -19,44 +15,44 @@ export default function AutoCarousel() {
 		slidesToShow: 3,
 		slidesToScroll: 1,
 		autoplay: true,
-		autoplaySpeed: 500,
+		autoplaySpeed: 2500,
+		pauseOnHover: true,
+		adaptiveHeight: true,
 	};
+
 	return (
-		<div className='slider-container'>
-			<h2>Auto Play {"&"} Pause with buttons</h2>
-			<Slider
-				ref={slider => (sliderRef = slider)}
-				{...settings}>
-				<div>
-					<h3>1</h3>
-				</div>
-				<div>
-					<h3>2</h3>
-				</div>
-				<div>
-					<h3>3</h3>
-				</div>
-				<div>
-					<h3>4</h3>
-				</div>
-				<div>
-					<h3>5</h3>
-				</div>
-				<div>
-					<h3>6</h3>
-				</div>
-			</Slider>
-			<div style={{ textAlign: "center" }}>
-				<button
-					className='button'
-					onClick={play}>
-					Play
-				</button>
-				<button
-					className='button'
-					onClick={pause}>
-					Pause
-				</button>
+		<div className='auto-carousel'>
+			<div className='slider-container'>
+				<h2>Auto Play Carousel Demo</h2>
+
+				<Slider
+					ref={slider => (sliderRef = slider)}
+					{...settings}>
+					<article className='auto-carousel__slide'>
+						<h3 className='auto-carousel__title'>Audio</h3>
+						<div className='auto-carousel__image-container'></div>
+					</article>
+
+					<article className='auto-carousel__slide'>
+						<h3 className='auto-carousel__title'>Games</h3>
+						<div className='auto-carousel__image-container'></div>
+					</article>
+
+					<article className='auto-carousel__slide'>
+						<h3 className='auto-carousel__title'>Cooking</h3>
+						<div className='auto-carousel__image-container'></div>
+					</article>
+
+					<article className='auto-carousel__slide'>
+						<h3 className='auto-carousel__title'>Wirecutter</h3>
+						<div className='auto-carousel__image-container'></div>
+					</article>
+
+					<article className='auto-carousel__slide'>
+						<h3 className='auto-carousel__title'>The Athletic</h3>
+						<div className='auto-carousel__image-container'></div>
+					</article>
+				</Slider>
 			</div>
 		</div>
 	);
