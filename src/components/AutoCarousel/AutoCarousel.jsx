@@ -19,18 +19,18 @@ export default function AutoCarousel() {
 		slidesToShow: 5,
 		slidesToScroll: 1,
 		autoplay: true,
-		autoplaySpeed: 2500,
+		autoplaySpeed: 1800,
 		pauseOnHover: true,
 		adaptiveHeight: true,
 		responsive: [
 			{
-				breakpoint: 1070,
+				breakpoint: 740,
 				settings: {
 					slidesToShow: 4,
 				},
 			},
 			{
-				breakpoint: 740,
+				breakpoint: 580,
 				settings: {
 					slidesToShow: 3,
 				},
