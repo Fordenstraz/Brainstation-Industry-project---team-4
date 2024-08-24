@@ -47,8 +47,6 @@ export default function AutoCarousel() {
 	return (
 		<div className='auto-carousel'>
 			<div className='slider-container'>
-				<h2>Auto Play Carousel Demo</h2>
-
 				<Slider
 					ref={slider => (sliderRef = slider)}
 					{...settings}>
