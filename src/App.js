@@ -10,6 +10,7 @@ import articleImage4 from '../src/assets/articleimage4.jpg';
 import yearImage from '../src/assets/year.png';
 // Components:
 import AutoCarousel from "./components/AutoCarousel/AutoCarousel";
+import SpeedDialNav from './components/SpeedDialNav';
 
 function App() {
   return (
@@ -55,6 +56,7 @@ function App() {
         updateText="See new updates 10+"
         showHeader={false} 
       />
+	  <SpeedDialNav />
     </div>
   );
 }
