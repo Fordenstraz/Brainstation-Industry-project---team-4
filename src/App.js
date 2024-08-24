@@ -1,3 +1,4 @@
+// Styling:
 import React from 'react';
 import Header from './components/Header';
 import HeaderSection from './components/HeaderSection';
@@ -7,12 +8,15 @@ import articleImage2 from '../src/assets/articleimage2.png';
 import articleImage3 from '../src/assets/articleimage3.png'; 
 import articleImage4 from '../src/assets/articleimage4.jpg'; 
 import yearImage from '../src/assets/year.png';
+// Components:
+import AutoCarousel from "./components/AutoCarousel/AutoCarousel";
 
 function App() {
   return (
     <div className="App">
       <Header />
       <HeaderSection />
+	  <AutoCarousel />
       <Article
         headline="At Convention, Democrats Celebrate Harris as Nominee in Ceremonial Vote"
         date={yearImage}

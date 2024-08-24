@@ -1,0 +1,16 @@
+// Breakpoints (as used on NYT site)
+$tablet: 46.25rem;
+$desktop: 66.875rem;
+
+// Media Querries
+@mixin tablet {
+	@media (min-width: $tablet) {
+		@content;
+	}
+}
+
+@mixin desktop {
+	@media (min-width: $desktop) {
+		@content;
+	}
+}
