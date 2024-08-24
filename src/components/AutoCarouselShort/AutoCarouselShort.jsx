@@ -3,7 +3,7 @@ import "./AutoCarouselShort.scss";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 // Imports:
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import Slider from "react-slick";
 import audioPage from "../../assets/images/audio_page.png";
 import gamePage from "../../assets/images/game_page.png";
@@ -14,12 +14,28 @@ import athleticPage from "../../assets/images/athletic_page.png";
 export default function AutoCarousel() {
 	let sliderRef = useRef(null);
 
+	//set state for carousel scrolling:
+	const [carouselScroll, setCarouselScroll] = useState(true);
+
+	//carousel scrolling timer:
+	useEffect(() => {
+		// Set up the timer to stop scrolling after 1 rotation:
+		const timer = setTimeout(() => {
+			setCarouselScroll(false);
+		}, 11000);
+
+		// Cleanup the timer:
+		return () => clearTimeout(timer);
+	}, []);
+
 	const settings = {
+		dots: true,
 		infinite: true,
 		slidesToShow: 5,
 		slidesToScroll: 1,
-		autoplay: true,
-		autoplaySpeed: 2500,
+		swipeToSlide: true,
+		autoplay: carouselScroll,
+		autoplaySpeed: 2000,
 		pauseOnHover: true,
 		adaptiveHeight: true,
 		responsive: [

@@ -3,7 +3,7 @@
 
 .slider-container {
 	padding: 0 1.25rem;
-	margin-bottom: 0.25rem;
+	margin-bottom: 2rem;
 	color: #d9d9d9;
 
 	@include mixins.tablet {
@@ -11,7 +11,7 @@
 	}
 
 	@include mixins.desktop {
-		margin: 0 auto;
+		margin: 0 auto 2rem;
 		max-width: 75rem;
 	}
 }
