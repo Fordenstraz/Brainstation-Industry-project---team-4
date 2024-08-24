@@ -8,15 +8,19 @@ import yearImage from "../src/assets/year.png";
 // Components:
 import Header from "./components/Header";
 import HeaderSection from "./components/HeaderSection";
-import AutoCarousel from "./components/AutoCarousel/AutoCarousel";
+// import AutoCarousel from "./components/AutoCarousel/AutoCarousel";
+import AutoCarouselShort from "./components/AutoCarouselShort/AutoCarouselShort";
 import Article from "./components/Article";
 
 function App() {
 	return (
 		<div className='App'>
 			<Header />
+
 			<HeaderSection />
-			<AutoCarousel />
+
+			<AutoCarouselShort />
+
 			<Article
 				headline='At Convention, Democrats Celebrate Harris as Nominee in Ceremonial Vote'
 				date={yearImage}
