@@ -24,21 +24,25 @@
 	}
 
 	&__title {
-		padding: 0;
-		margin: 0 0 0.25rem;
+		padding: 0 10%;
+		margin: 0 auto 0.25rem;
 		font-size: 0.75rem;
 		color: #000000;
 		font-family: "georgia";
+
+		@include mixins.desktop {
+			padding-left: 16%;
+		}
 	}
 
 	&__image-container {
 		display: flex;
 		justify-content: center;
 		height: 75%;
-		width: fit-content;
 		max-width: 80%;
 		border-radius: 0.125rem;
 		overflow: hidden;
+		margin: 0 auto;
 	}
 
 	&__image {
