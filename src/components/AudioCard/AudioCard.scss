@@ -1,0 +1,33 @@
+// Imports
+@use "../../styles/partials/mixins";
+
+.audio {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border-top: 1px solid #dfdfdf;
+  font-family: Georgia, serif;
+  &__header {
+    text-align: center;
+  }
+  &__card {
+    display: flex;
+    width: 100%;
+    padding: 20px 0;
+    border-top: 1px solid #dfdfdf;
+  }
+  &__image {
+    width: 30%;
+    border-radius: 4px;
+  }
+  &__details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 20px;
+  }
+  &__time {
+    color: #707070;
+    font-size: 14px;
+  }
+}

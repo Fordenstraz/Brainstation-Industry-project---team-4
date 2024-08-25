@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "headline": "Trump’s Carefully Scripted Week Kept Veering Off Script",
+    "description": "Despite calls by his advisers to focus on the issues, Donald Trump has made it clear that he intends to keep running his campaign his way.",
+    "link": "https://www.nytimes.com/2024/08/24/us/politics/trump-campaign-2024.html",
+    "image": "https://static01.nyt.com/images/2024/08/24/multimedia/24pol-trump-week01-photo-kqtc/24pol-trump-week01-photo-kqtc-articleLarge.jpg?quality=75&auto=webp&disable=upscale"
+  },
+  {
+    "id": 2,
+    "headline": "New Training and Tougher Rules: How Colleges Are Trying to Tame Gaza Protests",
+    "description": "University officials are spelling out strict codes around protests. They say they are trying to be clear. Others say they are trying to suppress speech.",
+    "link": "https://www.nytimes.com/2024/08/24/us/universities-campus-protests-rules.html",
+    "image": "https://static01.nyt.com/images/2024/08/22/multimedia/00nat-campus-protests-02-hwtj/00nat-campus-protests-02-hwtj-articleLarge.jpg?quality=75&auto=webp&disable=upscale"
+  },
+  {
+    "id": 3,
+    "headline": "Why Mpox Vaccines Aren’t Flowing to Africans in Desperate Need",
+    "description": "Drugmakers have supplies ready to ship that are necessary to stop a potential pandemic. But W.H.O. regulations have slowed access.",
+    "link": "https://www.nytimes.com/2024/08/23/health/mpox-vaccines-who-africa.html",
+    "image": "https://static01.nyt.com/images/2024/08/23/multimedia/23mpox-vaccine-hgpf/23mpox-vaccine-hgpf-articleLarge.jpg?quality=75&auto=webp&disable=upscale"
+  }
+]
