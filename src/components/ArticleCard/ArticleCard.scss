@@ -1,0 +1,23 @@
+// Imports
+@use "../../styles/partials/mixins";
+
+.article-card {
+  display: flex;
+  border-top: 1px solid #dfdfdf;
+  align-items: center;
+  padding: 20px 0;
+  &__list {
+    padding: 20px;
+  }
+  &__details {
+    width: 75%;
+    color: #333;
+    margin-bottom: 16px;
+    font-size: 16px;
+  }
+  &__img {
+    width: 33%;
+    height: 25%;
+    border-radius: 4px;
+  }
+}
