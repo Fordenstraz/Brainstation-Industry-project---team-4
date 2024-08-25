@@ -2,6 +2,7 @@ import data from "./assets/data/articles.json";
 
 // Styling:
 import React from "react";
+import "./App.scss";
 // import articleImage1 from "../src/assets/articleimage.png";
 // import articleImage2 from "../src/assets/articleimage2.png";
 // import articleImage3 from "../src/assets/articleimage3.png";
@@ -14,6 +15,10 @@ import HeaderSection from "./components/HeaderSection";
 import AutoCarouselShort from "./components/AutoCarouselShort/AutoCarouselShort";
 import Article from "./components/Article";
 import ArticleCard from "./components/ArticleCard/ArticleCard";
+import AthleticCard from "./components/AthleticCard/AthleticCard";
+import WirecutterCard from "./components/WirecutterCard/WirecutterCard";
+import CookingCard from "./components/CookingCard/CookingCard";
+import AudioCard from "./components/AudioCard/AudioCard";
 
 function App() {
   return (
@@ -32,7 +37,15 @@ function App() {
         // updateText="See new updates 9+"
         showHeader={true}
       />
+      <div className="more-news-header">
+        <h2>More News</h2>
+      </div>
+
       <ArticleCard data={data} />
+      <AthleticCard />
+      <AudioCard />
+      <WirecutterCard />
+      <CookingCard />
 
       {/* <Article
         headline="Economic Policies Stir Debate in Latest Election Campaigns"
