@@ -78,6 +78,7 @@ export default function AutoCarousel() {
 
 					<article className="auto-carousel__slide">
 						<h3 className="auto-carousel__title">Games</h3>
+
 						<div className="auto-carousel__image-container">
 							<a href="https://www.nytimes.com/crosswords">
 								<img
@@ -91,6 +92,7 @@ export default function AutoCarousel() {
 
 					<article className="auto-carousel__slide">
 						<h3 className="auto-carousel__title">Cooking</h3>
+
 						<div className="auto-carousel__image-container">
 							<a href="https://cooking.nytimes.com/">
 								<img
@@ -104,6 +106,7 @@ export default function AutoCarousel() {
 
 					<article className="auto-carousel__slide">
 						<h3 className="auto-carousel__title">Wirecutter</h3>
+
 						<div className="auto-carousel__image-container">
 							<a href="https://www.nytimes.com/wirecutter/">
 								<img
@@ -117,6 +120,7 @@ export default function AutoCarousel() {
 
 					<article className="auto-carousel__slide">
 						<h3 className="auto-carousel__title">The Athletic</h3>
+
 						<div className="auto-carousel__image-container">
 							<a href="https://www.nytimes.com/athletic/">
 								<img
