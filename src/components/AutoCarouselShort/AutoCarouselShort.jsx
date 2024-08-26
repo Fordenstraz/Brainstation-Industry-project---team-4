@@ -12,6 +12,7 @@ import wirecutterPage from "../../assets/images/wirecutter_page.png";
 import athleticPage from "../../assets/images/athletic_page.png";
 
 export default function AutoCarousel() {
+	// eslint-disable-next-line
 	let sliderRef = useRef(null);
 
 	//set state for carousel scrolling:
