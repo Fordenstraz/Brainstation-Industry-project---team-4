@@ -1,18 +1,23 @@
 .top-news-section {
   display: flex;
   align-items: center;
-  margin: 20px 0; 
+  margin: 20px 0;
 }
 
 .top-news-title {
-  font-family: 'Georgia', serif;
+  font-family: "Georgia", serif;
   font-size: 30px;
   font-weight: 700;
   color: #000;
-  margin-left: 20px; 
+  margin-left: 20px;
 
-.forward-chevron {
-  width: 20px;
-  margin-left: 10px; 
+  .forward-chevron {
+    width: 20px;
+    margin-left: 10px;
+  }
 }
+
+.more-news-header {
+  text-align: center;
+  font-family: "Georgia", serif;
 }
