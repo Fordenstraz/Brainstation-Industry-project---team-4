@@ -6,7 +6,7 @@ export default function CookingCard() {
       <div>
         <a
           className="cooking-card"
-          href="https://www.nytimes.com/wirecutter/money/rei-labor-day-sale-2024/"
+          href="https://cooking.nytimes.com/"
         >
           <h2 className="cooking-card__header">
             Cooking
