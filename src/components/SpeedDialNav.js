@@ -27,6 +27,7 @@ import manCityLogo from '../assets/Man City.png';
 import ipswichLogo from '../assets/Ipswich.png';
 import manCityVsIpswichImage from '../assets/mancityVsIpswich.jpg';
 import wirecutterArticleLogo from '../assets/wirecutterArticleLogo.avif';
+import audioImage from '../assets/podcast.jpg'
 
 const actions = [
   { icon: <img src={nytCooking} alt="Cooking" style={{ width: 40, height: 40, borderRadius: '50%' }} />, name: 'Cooking' },
@@ -78,6 +79,9 @@ export default function SpeedDialNav() {
     } else if (name === 'Wirecutter') {
       setCurrentContent('wirecutter');
       setOpenModal(true);
+    } else if (name === 'Audio') {
+      setCurrentContent('audio');
+      setOpenModal(true);
     } else {
       alert(`Navigating to ${name}`);
     }
@@ -119,7 +123,7 @@ export default function SpeedDialNav() {
         ))}
       </SpeedDial>
 
-{/* Modals */}
+      {/* Modals */}
       <Dialog
         open={openModal}
         onClose={() => setOpenModal(false)}
@@ -170,7 +174,7 @@ export default function SpeedDialNav() {
             </>
           )}
 
-          {/* Games Modal*/}
+          {/* Games Modal */}
           {currentContent === 'games' && (
             <>
               <Typography variant="h5" align="center" gutterBottom>
@@ -373,7 +377,6 @@ export default function SpeedDialNav() {
                 </Grid>
               </Grid>
 
-     
               <Box textAlign="center" sx={{ marginTop: 3 }}>
                 <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
                   Man City vs Ipswich City
@@ -395,6 +398,45 @@ export default function SpeedDialNav() {
               >
                 View more stories
               </Button>
+            </>
+          )}
+
+          {/* Audio Modal */}
+          {currentContent === 'audio' && (
+            <>
+              <Typography variant="h5" align="center" gutterBottom>
+                NYT Audio
+              </Typography>
+              <Card sx={{ maxWidth: '600px', margin: '0 auto', textAlign: 'center', boxShadow: 'none' }}>
+                <CardMedia
+                  component="img"
+                  image={audioImage}
+                  alt="NYT Audio"
+                  sx={{ borderRadius: '4px', marginBottom: 2 }}
+                />
+                <CardContent>
+                  <Typography variant="h6" sx={{ fontWeight: 'bold' }}>
+                    Listen to the Latest Episodes
+                  </Typography>
+                  <Typography variant="body2" color="text.secondary" sx={{ marginBottom: 2 }}>
+                    Stay updated with the latest news, stories, and features from The New York Times audio series. Enjoy curated content anytime, anywhere.
+                  </Typography>
+                  <Button
+                    variant="outlined"
+                    sx={{
+                      backgroundColor: '#f5f5f5',
+                      border: '1px solid #ccc',
+                      color: '#333',
+                      '&:hover': { backgroundColor: '#e0e0e0' },
+                      padding: '10px 20px',
+                      borderRadius: '20px',
+                    }}
+                    onClick={() => window.open('https://www.nytimes.com/audio', '_blank')}
+                  >
+                    Listen on NYT Audio
+                  </Button>
+                </CardContent>
+              </Card>
             </>
           )}
         </DialogContent>

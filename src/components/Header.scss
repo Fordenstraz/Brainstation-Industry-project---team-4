@@ -1,36 +1,46 @@
-.header {
-    background-color: #FFFFFF;
-    height: 48px;
-    padding: 13px 15px 9px 15px;
-    border-bottom: 1px solid #E2E2E2;
-    display: flex;
-    justify-content: center;
-    box-shadow: none;
-    width: 100%;
-    
-    &__toolbar {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      max-width: 485px;
-      width: 100%;
-      margin: 0 auto;
-    }
-  
-    &__icon-button {
-      background: none;
-      border: none;
-      padding: 0;
-      cursor: pointer;
+// Imports
+@use "../styles/partials/mixins";
 
-    }
-  
-    &__icon {
-      width: 24px;
-      height: 24px;
-    }
-  
-    &__logo {
-      height: 30px;
-    }
+.header {
+  background-color: #ffffff;
+  height: 48px;
+  padding: 13px 15px 9px 15px;
+  border-bottom: 1px solid #e2e2e2;
+  display: flex;
+  justify-content: center;
+  box-shadow: none;
+
+  @include mixins.tablet {
+    padding: 0 3%;
   }
+
+  @include mixins.desktop {
+    margin: 0 auto;
+    max-width: 75rem;
+  }
+
+  &__toolbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 485px;
+    width: 100%;
+    margin: 0 auto;
+  }
+
+  &__icon-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  &__icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  &__logo {
+    height: 30px;
+  }
+}
