@@ -46,6 +46,10 @@
 	}
 
 	&__image {
+		width: auto;
 		height: 100%;
+		object-fit: cover;
+		backface-visibility: hidden;
+		-webkit-backface-visibility: hidden;
 	}
 }
