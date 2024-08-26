@@ -1,0 +1,108 @@
+.games-card {
+  padding: 20px;
+  background-color: #ffffff;
+  text-align: center;
+  margin: 20px;
+  border-top: 10px solid #F6f6f6;  
+
+  .games-title {
+    font-family: 'Georgia', serif;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+
+  .games-grid {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    gap: 10px; 
+  }
+
+  .game-item {
+    width: 200px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .game-item-header {
+    padding: 20px;
+  }
+
+  .spelling-bee-bg {
+    background-color: #f7da21;
+    padding: 20px;
+    border-radius: 8px 8px 0 0; 
+  }
+
+  .wordle-bg {
+    background-color: #e3e3e1;
+    padding: 20px;
+    border-radius: 8px 8px 0 0; 
+  }
+
+  .game-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+
+  .game-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+
+  .game-buttons {
+    padding: 20px 0;
+    background-color: #f7f7f7;
+
+    .game-button {
+      display: block;
+      width: 150px;
+      margin: 10px auto;
+      padding: 10px;
+      border-radius: 20px;
+      border: 1px solid #ccc;
+      background-color: #ffffff;
+      font-size: 14px;
+      color: #000;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #e0e0e0;
+      }
+    }
+  }
+
+  .crossword-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px 0;
+
+    .crossword-content {
+      text-align: left;
+      max-width: 60%;
+    }
+
+    h3 {
+      font-size: 16px;
+      font-weight: bold;
+      margin: 0 0 10px 0;
+    }
+
+    p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    .crossword-image {
+      width: 80px;
+      height: 80px;
+    }
+  }
+}

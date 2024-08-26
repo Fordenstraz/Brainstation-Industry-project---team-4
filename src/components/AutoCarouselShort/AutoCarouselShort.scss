@@ -17,7 +17,7 @@
 
 .auto-carousel {
 	width: 100%;
-
+	border-bottom: 10px solid #F6f6f6;
 
 	&__slide {
 		height: 6rem;
@@ -41,7 +41,7 @@
 		justify-content: center;
 		height: 75%;
 		max-width: 80%;
-		border-radius: 0.25rem;
+		border-radius: 0.125rem;
 		overflow: hidden;
 		margin: 0 auto;
 	}
@@ -50,3 +50,4 @@
 		height: 100%;
 	}
 }
+
