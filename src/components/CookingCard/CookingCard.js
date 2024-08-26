@@ -6,7 +6,7 @@ export default function CookingCard() {
       <div>
         <a
           className="cooking-card"
-          href="https://cooking.nytimes.com/"
+          href="https://cooking.nytimes.com/recipes/1025528-eggplant-lasagna"
         >
           <h2 className="cooking-card__header">
             Cooking
