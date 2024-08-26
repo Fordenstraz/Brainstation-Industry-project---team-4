@@ -38,7 +38,6 @@ export default function AutoCarousel() {
 		autoplay: carouselScroll,
 		autoplaySpeed: 2000,
 		pauseOnHover: true,
-		adaptiveHeight: true,
 		responsive: [
 			{
 				breakpoint: 740,
