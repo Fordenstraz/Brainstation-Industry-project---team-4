@@ -3,14 +3,14 @@
 
 .slider-container {
 	padding: 0 1.25rem;
-	color: #d9d9d9;
+	margin: 0.5rem 0 2rem;
 
 	@include mixins.tablet {
 		padding: 0 3%;
 	}
 
 	@include mixins.desktop {
-		margin: 0 auto;
+		margin: 0 auto 2rem;
 		max-width: 75rem;
 	}
 }
@@ -20,23 +20,30 @@
 
 
 	&__slide {
-		height: 24vh;
-		background-image: linear-gradient(180deg, #000000 60%, white 100%);
-		padding: 0.5rem 1rem 0.125rem;
+		height: 6rem;
+		background-color: #ffffff;
 	}
 
 	&__title {
-		padding: 0;
-		margin: 0 0 0.25rem;
+		padding: 0 10%;
+		margin: 0 auto 0.25rem;
 		font-size: 0.75rem;
+		color: #000000;
+		font-family: "georgia";
+
+		@include mixins.desktop {
+			padding-left: 16%;
+		}
 	}
 
 	&__image-container {
-		height: 50%;
-		width: fit-content;
+		display: flex;
+		justify-content: center;
+		height: 75%;
 		max-width: 80%;
 		border-radius: 0.125rem;
 		overflow: hidden;
+		margin: 0 auto;
 	}
 
 	&__image {

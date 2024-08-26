@@ -9,7 +9,7 @@ import forwardChevron from "../src/assets/forwardChevron.svg"; // Import the Che
 // Components:
 import Header from "./components/Header";
 import HeaderSection from "./components/HeaderSection";
-import AutoCarouselShort from "./components/AutoCarouselShort/AutoCarouselShort";
+import AutoCarousel from "./components/AutoCarousel/AutoCarousel";
 import Article from "./components/Article";
 import ArticleCard from "./components/ArticleCard/ArticleCard";
 import AthleticCard from "./components/AthleticCard/AthleticCard";
@@ -21,13 +21,13 @@ import GameCard from "./components/GameCard";
 import AdComponent from "./components/AdComponent";
 
 function App() {
-  return (
-    <div className="App">
-      <Header />
+	return (
+		<div className='App'>
+			<Header />
 
-      <HeaderSection />
+			<HeaderSection />
 
-      <AutoCarouselShort />
+			<AutoCarousel />
 
       {/* Top News Section */}
       <div className="top-news-section">
@@ -56,8 +56,8 @@ function App() {
 	  <GameCard />
 
       <SpeedDialNav />
-    </div>
-  );
+		</div>
+	);
 }
 
 export default App;
