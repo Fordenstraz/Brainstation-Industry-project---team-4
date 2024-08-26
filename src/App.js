@@ -4,7 +4,7 @@ import data from "./assets/data/articles.json";
 import React from "react";
 import "./App.scss";
 import yearImage from "../src/assets/year.png";
-import forwardChevron from "../src/assets/forwardChevron.svg"; // Import the Chevron icon
+import forwardChevron from "../src/assets/forwardChevron.svg"; 
 
 // Components:
 import Header from "./components/Header";
