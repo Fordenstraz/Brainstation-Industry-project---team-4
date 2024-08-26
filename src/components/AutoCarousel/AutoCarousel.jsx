@@ -12,9 +12,6 @@ import wirecutterPage from "../../assets/images/wirecutter_page.webp";
 import athleticPage from "../../assets/images/athletic_page.webp";
 
 export default function AutoCarousel() {
-	// eslint-disable-next-line
-	let sliderRef = useRef(null);
-
 	//set state for carousel scrolling:
 	const [carouselScroll, setCarouselScroll] = useState(true);
 
@@ -62,71 +59,70 @@ export default function AutoCarousel() {
 	};
 
 	return (
-		<div className='auto-carousel'>
-			<div className='slider-container'>
-				<Slider
-					ref={slider => (sliderRef = slider)}
-					{...settings}>
-					<article className='auto-carousel__slide'>
-						<h3 className='auto-carousel__title'>Audio</h3>
-						<div className='auto-carousel__image-container'>
-							<a href='https://www.nytimes.com/spotlight/podcasts'>
+		<div className="auto-carousel">
+			<div className="slider-container">
+				<Slider {...settings}>
+					<article className="auto-carousel__slide">
+						<h3 className="auto-carousel__title">Audio</h3>
+
+						<div className="auto-carousel__image-container">
+							<a href="https://www.nytimes.com/spotlight/podcasts">
 								<img
 									src={audioPage}
-									alt='A sign that reads vote here.'
-									className='auto-carousel__image'
+									alt="A sign that reads vote here."
+									className="auto-carousel__image"
 								/>
 							</a>
 						</div>
 					</article>
 
-					<article className='auto-carousel__slide'>
-						<h3 className='auto-carousel__title'>Games</h3>
-						<div className='auto-carousel__image-container'>
-							<a href='https://www.nytimes.com/crosswords'>
+					<article className="auto-carousel__slide">
+						<h3 className="auto-carousel__title">Games</h3>
+						<div className="auto-carousel__image-container">
+							<a href="https://www.nytimes.com/crosswords">
 								<img
 									src={gamePage}
-									alt='Various games offered by the New York Times.'
-									className='auto-carousel__image'
+									alt="Various games offered by the New York Times."
+									className="auto-carousel__image"
 								/>
 							</a>
 						</div>
 					</article>
 
-					<article className='auto-carousel__slide'>
-						<h3 className='auto-carousel__title'>Cooking</h3>
-						<div className='auto-carousel__image-container'>
-							<a href='https://cooking.nytimes.com/'>
+					<article className="auto-carousel__slide">
+						<h3 className="auto-carousel__title">Cooking</h3>
+						<div className="auto-carousel__image-container">
+							<a href="https://cooking.nytimes.com/">
 								<img
 									src={cookingPage}
-									alt='A cucumber salad topped with thinly sliced red onion.'
-									className='auto-carousel__image'
+									alt="A cucumber salad topped with thinly sliced red onion."
+									className="auto-carousel__image"
 								/>
 							</a>
 						</div>
 					</article>
 
-					<article className='auto-carousel__slide'>
-						<h3 className='auto-carousel__title'>Wirecutter</h3>
-						<div className='auto-carousel__image-container'>
-							<a href='https://www.nytimes.com/wirecutter/'>
+					<article className="auto-carousel__slide">
+						<h3 className="auto-carousel__title">Wirecutter</h3>
+						<div className="auto-carousel__image-container">
+							<a href="https://www.nytimes.com/wirecutter/">
 								<img
 									src={wirecutterPage}
-									alt='A sphere filled with smoke.'
-									className='auto-carousel__image'
+									alt="A sphere filled with smoke."
+									className="auto-carousel__image"
 								/>
 							</a>
 						</div>
 					</article>
 
-					<article className='auto-carousel__slide'>
-						<h3 className='auto-carousel__title'>The Athletic</h3>
-						<div className='auto-carousel__image-container'>
-							<a href='https://www.nytimes.com/athletic/'>
+					<article className="auto-carousel__slide">
+						<h3 className="auto-carousel__title">The Athletic</h3>
+						<div className="auto-carousel__image-container">
+							<a href="https://www.nytimes.com/athletic/">
 								<img
 									src={athleticPage}
 									alt="Manager of the Seattle Mariner's baseball team, Jerry Dipoto."
-									className='auto-carousel__image'
+									className="auto-carousel__image"
 								/>
 							</a>
 						</div>
