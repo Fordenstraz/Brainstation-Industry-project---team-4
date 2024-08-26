@@ -5,11 +5,11 @@ import "slick-carousel/slick/slick-theme.css";
 // Imports:
 import React, { useRef, useState, useEffect } from "react";
 import Slider from "react-slick";
-import audioPage from "../../assets/images/audio_page.png";
-import gamePage from "../../assets/images/game_page.png";
-import cookingPage from "../../assets/images/cooking_page.png";
-import wirecutterPage from "../../assets/images/wirecutter_page.png";
-import athleticPage from "../../assets/images/athletic_page.png";
+import audioPage from "../../assets/images/audio_page.webp";
+import gamePage from "../../assets/images/game_page.webp";
+import cookingPage from "../../assets/images/cooking_page.webp";
+import wirecutterPage from "../../assets/images/wirecutter_page.webp";
+import athleticPage from "../../assets/images/athletic_page.webp";
 
 export default function AutoCarousel() {
 	// eslint-disable-next-line
