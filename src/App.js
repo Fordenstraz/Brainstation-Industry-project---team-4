@@ -12,7 +12,7 @@ import yearImage from "../src/assets/year.png";
 import Header from "./components/Header";
 import HeaderSection from "./components/HeaderSection";
 // import AutoCarousel from "./components/AutoCarousel/AutoCarousel";
-import AutoCarouselShort from "./components/AutoCarouselShort/AutoCarouselShort";
+import AutoCarousel from "./components/AutoCarousel/AutoCarousel";
 import Article from "./components/Article";
 import ArticleCard from "./components/ArticleCard/ArticleCard";
 import AthleticCard from "./components/AthleticCard/AthleticCard";
@@ -21,33 +21,33 @@ import CookingCard from "./components/CookingCard/CookingCard";
 import AudioCard from "./components/AudioCard/AudioCard";
 
 function App() {
-  return (
-    <div className="App">
-      <Header />
+	return (
+		<div className='App'>
+			<Header />
 
-      <HeaderSection />
+			<HeaderSection />
 
-      <AutoCarouselShort />
+			<AutoCarousel />
 
-      <Article
-        data={data}
-        date={yearImage}
-        live="LIVE"
-        watchText="WATCH WITH ANALYSIS"
-        // updateText="See new updates 9+"
-        showHeader={true}
-      />
-      <div className="more-news-header">
-        <h2>More News</h2>
-      </div>
+			<Article
+				data={data}
+				date={yearImage}
+				live='LIVE'
+				watchText='WATCH WITH ANALYSIS'
+				// updateText="See new updates 9+"
+				showHeader={true}
+			/>
+			<div className='more-news-header'>
+				<h2>More News</h2>
+			</div>
 
-      <ArticleCard data={data} />
-      <AthleticCard />
-      <AudioCard />
-      <WirecutterCard />
-      <CookingCard />
+			<ArticleCard data={data} />
+			<AthleticCard />
+			<AudioCard />
+			<WirecutterCard />
+			<CookingCard />
 
-      {/* <Article
+			{/* <Article
         headline="Economic Policies Stir Debate in Latest Election Campaigns"
         description="As the election approaches, candidates debate over economic policies that could shape the future of the nation."
         imageSrc={articleImage2}
@@ -73,8 +73,8 @@ function App() {
         updateText="See new updates 10+"
         showHeader={false}
       /> */}
-    </div>
-  );
+		</div>
+	);
 }
 
 export default App;
