@@ -11,3 +11,5 @@ This component is meant to show at-a-glance many of the other products offered b
 -   Responsivesness was a priority with this design. The banner needs to scale to each screen size without squashing or stretching the cards. Breakpoints were used to set the number of slides in the carouself at once. Due to the limited number of slides coded into the demo, the _look_ of the carousel breaks down at larger screen sizes.
 
 -   Scrolling occurs automatically for the first full rotation (scrolling through each slide once), then it remains static. Scrolling can still be acheived by swiping (on touch screens) or by clicking the navigation dots below the carousel. The scrolling timer is currently set manually, to runn through 5 slides. In future iterations I want the timer to be calculated automatically based on the number of slides mapped into the component.
+
+-   Slick-Carousel seems to have compatibility issues with IOS devices and the Safari browser. Images in the carousel component do not load when viewed on those devices. The react-slick library may need to be replaced in the future, for the sake of compatibility.
