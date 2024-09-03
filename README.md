@@ -1,6 +1,6 @@
 # Team 4 - The New York Times industry project
 
-## Cross-promotional Banner
+## Cross-promotional Banner (Corey)
 
 This component is meant to show at-a-glance many of the other products offered by the New York Times.
 
